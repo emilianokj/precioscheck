@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem; /* equivale a 16px */
+    /*background-color: #475eb5;*/
+    background-color: #3eb0cc;
+}
+
+/*ENCABEZADO*/
+
+.encabezado {
+    /*border-bottom: 2px solid #475eb5;
+    box-shadow: 0 8px 4px rgba(136, 132, 249, 0.1);*/
+    background-color: #8ecae6;
+}
+
+.encabezado__navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado__marca {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.12rem;
+}
+
+.encabezado__logo {
+    width: 100px;
+    height: auto;
+}
+
+.encabezado__version {
+    margin-right: 2.6em;
+}
+
+.contenido-principal {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-principal__hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 36rem;
+}
+
+.contenido-principal__titulo {
+    margin-bottom: 4rem;
+}
+
+.contenido-principal__descripcion {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.buscador {
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.buscador__input {
+    border-style: none;
+    border-bottom: 2px solid black;
+    border-radius: 0.3rem;
+    padding: 0.6rem;
+    width: 35rem;
+    font-size: 1.1rem;
+    opacity: 90%;
+}
+
+.buscador__boton {
+    width: 8rem;
+    height: 2.7rem;
+    letter-spacing: 0.1rem;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: rgb(23, 23, 23);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#contenedor-sugerencias {
+    position: absolute;
+    width: 35rem;
+    transform: translateX(20%);
+    top: 100%; /* Colocar justo debajo de donde termina el input/formulario */
+    left: 0;   /* Alinear al borde izquierdo */
+    right: 0;  /* Estirar al borde derecho (ocupar todo el ancho del .buscador) */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Asegurar que esté por encima de otros elementos */
+    max-height: 250px; /* Limitar la altura para que no sea infinita */
+    overflow-y: auto; /* Mostrar scroll si hay muchas sugerencias */
+}
+
+.sugerencias-lista {
+    list-style: none; /* Quitar viñetas */
+    padding: 0;
+    margin: 0;
+}
+
+.sugerencias-lista .sugerencia-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: black;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.sugerencias-lista .sugerencia-item:hover {
+    background-color: #f0f0f0;
+}
+
+.contenido-supermercados {
+    height: 23rem;
+}
+
+.contenido-supermercados__subtitulo {
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.contenido-supermercados__lista {
+    width: 40rem;
+    height: 13rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.contenido-supermercados__imagen {
+    width: 8.5rem;
+}
+
+.pie-de-pagina {
+    text-align: center;
+}
+
+
+/* Media queries index.html */
+
+@media screen and (max-width: 1200px){
+
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+/* Pantalla comparación de precios */
+
+.contenido-principal__hero--secundario {
+    margin-bottom: 2em;
+}
+
+.contenido-principal__titulo--secundario {
+    font-size: 2.6rem;
+}
+
+.contenido-cards {
+    width: 60rem;
+    height: 28rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-producto {
+    width: 20rem;
+    height: auto;
+    background-color: #8ecae6;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card-producto__imagen {
+    width: 18rem;
+    height: 14rem;
+    margin-bottom: 0.6em;
+    padding: 1.3rem 1.3rem;
+}
+
+.card-producto__nombre, .card-producto__supermercado, .card-producto__precio {
+    margin-bottom: 0.33rem;
+    padding: 0rem 0.5rem 0.5rem;
+}
+
+.card-producto--oferta-minima {
+    border: 3px solid #28a745;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+}
+.card-producto--oferta-minima .card-producto__precio {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Media queries comparacion-productos.html */
+
+@media screen and (max-width: 1200px){
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+
+

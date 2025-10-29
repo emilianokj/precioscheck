@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compará precios del producto seleccionado entre los principales supermercados del país">
+    <meta name="keywords" content="comparador de precios, supermercados, argentina, productos, ahorro, precioscheck, alimentos">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-precioscheck-32x32.png">
+    <!-- Open Graph (para compartir en redes sociales como Facebook, WhatsApp) -->
+    <!-- configurar las de open graph que están default--> 
+    <meta property="og:title" content="PreciosCheck | Compará precios y ahorrá">
+    <meta property="og:description" content="Buscá un producto y descubrí en qué supermercado argentino está más barato.">
+    <meta property="og:image" content="https://tusitio.com/assets/preview.png">
+    <meta property="og:url" content="https://tusitio.com">
+    <meta property="og:type" content="website">
+    <title>PreciosCheck - Comparador de precios entre Supermercados</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="encabezado__navegacion">
+            <div class="encabezado__marca">
+                <a href="./index.html"><img class="encabezado__logo" src="./assets/img/logo_precios_check.png" alt="Logo de precioscheck, carrito de supermercado con una lupa buscando el mejor precio"></a>
+            <p class="encabezado__nombre">PreciosCheck</p>
+            </div>
+            <p class="encabezado__version">v1.0.0</p>
+        </nav>
+    </header>
+    <main class="contenido-principal">
+        <section class="contenido-principal__hero--secundario">
+            <h1 id="nombre-producto-principal" class="contenido-principal__titulo--secundario"></h1>
+        </section>
+        <section id="contenedor-cards-comparacion" class="contenido-cards"></section>
+        <section class="buscador">
+            <a href="./index.html"><button class="buscador__boton">Volver atrás</button></a>
+        </section>
+    </main>
+    <footer class="pie-de-pagina">
+        <p class="pie-de-pagina__copyright">Copyright &copy 2025 - PreciosCheck</p>
+    </footer>
+    <script src="./js/comparacion.js"></script>
+</body>
+</html>

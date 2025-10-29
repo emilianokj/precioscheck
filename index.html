@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compará precios del producto seleccionado entre los principales supermercados del país">
+    <meta name="keywords" content="comparador de precios, supermercados, argentina, productos, ahorro, precioscheck, alimentos">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-precioscheck-32x32.png">
+    <!-- Open Graph (para compartir en redes sociales como Facebook, WhatsApp) -->
+    <!-- configurar las de open graph que están default--> 
+    <meta property="og:title" content="PreciosCheck | Compará precios y ahorrá">
+    <meta property="og:description" content="Buscá un producto y descubrí en qué supermercado argentino está más barato.">
+    <meta property="og:image" content="https://tusitio.com/assets/preview.png">
+    <meta property="og:url" content="https://tusitio.com">
+    <meta property="og:type" content="website">
+    <title>PreciosCheck - Comparador de precios entre Supermercados</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="encabezado__navegacion">
+            <div class="encabezado__marca">
+                <a href=""><img class="encabezado__logo" src="./assets/img/logo_precios_check.png" alt="Logo de precioscheck, carrito de supermercado con una lupa buscando el mejor precio"></a>
+            <p class="encabezado__nombre">PreciosCheck</p>
+            </div>
+            <p class="encabezado__version">v1.0.0</p>
+        </nav>
+    </header>
+    <main class="contenido-principal">
+        <section class="contenido-principal__hero">
+            <h1 class="contenido-principal__titulo">Encontrá el mejor precio para cualquier producto</h1>
+            <p class="contenido-principal__descripcion">Escribí el producto que querés buscar (ej: fideos, yerba, leche).</p>
+            <article class="buscador">
+                <form id="formulario-busqueda" class="buscador__formulario">
+                    <input id="input-busqueda" class="buscador__input" type="search" name="q" placeholder="Buscar producto...">
+                    <button id="boton-busqueda" class="buscador__boton" type="submit">Buscar</button>
+                </form>
+                <div id="contenedor-sugerencias">
+
+                </div>
+            </article>
+        </section>
+        <section class="contenido-supermercados">
+            <h2 class="contenido-supermercados__subtitulo">Supermercados disponibles</h2>
+            <div class="contenido-supermercados__lista">
+                <article class="contenido-supermercados__item">
+                    <img class="contenido-supermercados__imagen" src="./assets/img/supermercado disco.png" alt="Logo del supermercado disco"> 
+                    <h3 class="contenido-supermercados__nombre">Disco</h3>
+                </article>
+                <article class="contenido-supermercados__item">
+                    <img class="contenido-supermercados__imagen" src="./assets/img/supermercado carrefour.png" alt="Logo del supermercado carrefour">
+                    <h3 class="contenido-supermercados__nombre">Carrefour</h3>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="pie-de-pagina">
+        <p class="pie-de-pagina__copyright">Copyright &copy 2025 - PreciosCheck</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
