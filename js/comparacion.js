@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!nombreProducto) {
         return;
     }
-    
-    const API_URL = `http://localhost:8080/api/comparacion/nombre?nombre=${nombreProducto}`;
+    const RAILWAY_API_HOST = "https://diplomatic-enthusiasm-production.up.railway.app";
+    const API_URL = `${RAILWAY_API_HOST}/api/comparacion/nombre?nombre=${nombreProducto}`;
     
     fetch(API_URL)
         .then(response => {

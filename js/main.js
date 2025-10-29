@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Llamada al endpoint de sugerencias
-        const SUGERENCIAS_API_URL = `http://localhost:8080/api/producto/autocompletar?q=${consulta}`;
+        const RAILWAY_API_HOST = "https://diplomatic-enthusiasm-production.up.railway.app";
+        const SUGERENCIAS_API_URL = `${RAILWAY_API_HOST}/api/producto/autocompletar?q=${consulta}`;
         
         fetch(SUGERENCIAS_API_URL)
             .then(response => response.json())
